@@ -1,0 +1,26 @@
+---
+description: Project-wide engineering rules
+globs:
+  - "src/**/*.{ts,tsx}"
+  - "app/**/*.{ts,tsx}"
+alwaysApply: true
+---
+
+# Project rules
+
+- Use the package manager declared in `package.json#packageManager`. Do not mix lockfiles.
+- Run `pnpm lint`, `pnpm typecheck`, and `pnpm test` before saying the task is complete.
+- Match the nearest existing component and data-access pattern.
+- Server-only code must never be imported into a client component.
+- Validate external input with the shared schema in `src/lib/validation.ts`.
+- Add a test for every bug fix. The test must fail on the parent commit.
+- Do not edit generated files, lockfiles, or migrations without explicit approval.
+- Do not add a client-side dependency for a problem already solved by the platform.
+- Keep diffs focused. Do not reformat unrelated files.
+
+# Definition of done
+
+- Acceptance criteria are met.
+- The relevant test fails before the change and passes after it.
+- No secrets or production data appear in the diff.
+- The final response lists verification commands and their results.
