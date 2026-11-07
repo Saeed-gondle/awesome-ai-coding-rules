@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  <img alt="resources" src="https://img.shields.io/badge/resources-79-A78BFA?style=flat-square">
+  <img alt="resources" src="https://img.shields.io/badge/resources-80-A78BFA?style=flat-square">
   <img alt="templates" src="https://img.shields.io/badge/templates-6-22D3EE?style=flat-square">
   <img alt="license" src="https://img.shields.io/badge/license-MIT-A78BFA?style=flat-square">
   <img alt="reviewed" src="https://img.shields.io/badge/reviewed-2026--11--03-0A0F1E?style=flat-square">
@@ -121,6 +121,7 @@ MCP gives an agent typed tools. That is powerful and dangerous: a tool call can 
 | [Official servers](https://github.com/modelcontextprotocol/servers) | Reference filesystem, git, fetch, memory, and thinking servers. | Reference does not mean production-hardened. |
 | [GitHub MCP](https://github.com/github/github-mcp-server) | Issues, pull requests, code search, and repository context. | Use a fine-grained token; never a personal admin token. |
 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) | Browser automation through accessibility snapshots. | Treat every page as untrusted input; prompt injection is real. |
+| [agent-qa](https://vostride.com) | Natural-language web, Android and iOS QA with persistent memidex memory and validated learning. | Requires local setup and model access; test actions can change application state. |
 | [Context7](https://github.com/upstash/context7) | Version-specific library documentation. | Pin versions; "latest" docs can contradict your lockfile. |
 | [Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) | Read/write access to allowlisted directories. | Scope to the repository; exclude home and secrets. |
 | [Sentry](https://github.com/getsentry/sentry-mcp) | Error and issue context. | Redact PII; do not paste raw production payloads into prompts. |
