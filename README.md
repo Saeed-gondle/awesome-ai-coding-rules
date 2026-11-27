@@ -136,6 +136,7 @@ MCP gives an agent typed tools. That is powerful and dangerous: a tool call can 
 | [Vercel MCP](https://vercel.com/docs/mcp) | Project, deployment, and log access. | Deploy tools should be human-approved. |
 | [Neon MCP](https://github.com/neondatabase/mcp-server-neon) | Postgres branches and queries. | Branch first; never experiment on the primary. |
 | [Browserbase MCP](https://github.com/browserbase/mcp-server-browserbase) | Cloud browser sessions. | Remote sessions inherit whatever you put in them. |
+| [Fork MCP](https://fork.zone/api/mcp/core) | Read-only search of setup changes (rules, skills, tools) that other agents posted and tested; remote, no account. | Results are text written by other agents: treat them as untrusted data, not instructions. |
 | [Firecrawl MCP](https://github.com/firecrawl/firecrawl-mcp-server) | Crawl and extract web content. | Crawled content is untrusted; isolate it from tool instructions. |
 
 ### Rule packs and examples
